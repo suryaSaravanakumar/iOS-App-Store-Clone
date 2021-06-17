@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D80CEF08267AE714002F7092 /* SmallFeaturedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80CEF07267AE714002F7092 /* SmallFeaturedCollectionViewCell.swift */; };
 		D82EA4BF2675E47E00B4EFE7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82EA4BE2675E47E00B4EFE7 /* AppDelegate.swift */; };
 		D82EA4C12675E47E00B4EFE7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82EA4C02675E47E00B4EFE7 /* SceneDelegate.swift */; };
 		D82EA4C32675E47E00B4EFE7 /* AppsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82EA4C22675E47E00B4EFE7 /* AppsViewController.swift */; };
@@ -42,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D80CEF07267AE714002F7092 /* SmallFeaturedCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallFeaturedCollectionViewCell.swift; sourceTree = "<group>"; };
 		D82EA4BB2675E47E00B4EFE7 /* AppStore-D.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AppStore-D.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D82EA4BE2675E47E00B4EFE7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D82EA4C02675E47E00B4EFE7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -209,6 +211,7 @@
 				D82EA51D267628DD00B4EFE7 /* FeaturedCollectionViewCell.swift */,
 				D82EA52226766E7F00B4EFE7 /* GridLayoutCollectionViewCell.swift */,
 				D82EA5272677A69E00B4EFE7 /* SmallGridLayoutCollectionViewCell.swift */,
+				D80CEF07267AE714002F7092 /* SmallFeaturedCollectionViewCell.swift */,
 			);
 			path = CollectionViewCell;
 			sourceTree = "<group>";
@@ -356,6 +359,7 @@
 				D82EA52326766E7F00B4EFE7 /* GridLayoutCollectionViewCell.swift in Sources */,
 				D82EA4FE26761F5400B4EFE7 /* AppStoreModel.swift in Sources */,
 				D82EA51E267628DD00B4EFE7 /* FeaturedCollectionViewCell.swift in Sources */,
+				D80CEF08267AE714002F7092 /* SmallFeaturedCollectionViewCell.swift in Sources */,
 				D82EA4BF2675E47E00B4EFE7 /* AppDelegate.swift in Sources */,
 				D82EA516267627F900B4EFE7 /* AppStoreCellConfigurable.swift in Sources */,
 				D82EA5282677A69E00B4EFE7 /* SmallGridLayoutCollectionViewCell.swift in Sources */,

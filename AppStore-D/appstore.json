@@ -247,6 +247,62 @@
 			}
 		]
 	},
+    {
+        "id": 8,
+        "type": "smallFeatured",
+        "title": "Apple Design Award Winners",
+        "subtitle": "",
+        "items": [
+            {
+                "id": 71,
+                "tagline": "Featured",
+                "name": "Strokey",
+                "subheading": "You'll never stroke the same way again.",
+                "image": "Heading1",
+                "iap": true
+            },
+            {
+                "id": 72,
+                "tagline": "See it in dark mode",
+                "name": "Smartwhirl",
+                "subheading": "People who love whirling just like you!",
+                "image": "Heading2",
+                "iap": false
+            },
+            {
+                "id": 73,
+                "tagline": "New update",
+                "name": "Professorify",
+                "subheading": "Introducing your portable professor.",
+                "image": "Heading3",
+                "iap": true
+            },
+            {
+                "id": 74,
+                "tagline": "Featured",
+                "name": "SituationMe",
+                "subheading": "Your Situation. Dedicated.",
+                "image": "Heading4",
+                "iap": false
+            },
+            {
+                "id": 75,
+                "tagline": "New update",
+                "name": "Squeally",
+                "subheading": "Motivate your squealing ecosystem.",
+                "image": "Heading5",
+                "iap": true
+            },
+            {
+                "id": 76,
+                "tagline": "See it in dark mode",
+                "name": "youplayer",
+                "subheading": "Harmonize your inner player.",
+                "image": "Heading6",
+                "iap": false
+            }
+        ]
+    },
 	{
         "id": 4,
 		"type": "smallTable",

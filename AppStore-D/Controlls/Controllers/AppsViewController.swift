@@ -26,7 +26,7 @@ class AppsViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         reloadDataWithSnapShot()
     }
-   
+    
     
     //MARK: - Custom Methods
     private func initalSetup(){
@@ -39,11 +39,14 @@ class AppsViewController: UIViewController {
         collectionView.backgroundColor = .systemBackground
         view.addSubview(collectionView)
         
+        
+        collectionView.register(CollectionViewSectionHeader.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: CollectionViewSectionHeader.reuseIdentifier)
         collectionView.register(FeaturedCollectionViewCell.self, forCellWithReuseIdentifier: FeaturedCollectionViewCell.reuseIdentifier)
         collectionView.register(GridLayoutCollectionViewCell.self, forCellWithReuseIdentifier: GridLayoutCollectionViewCell.reuseIdentifier)
         collectionView.register(SmallGridLayoutCollectionViewCell.self, forCellWithReuseIdentifier: SmallGridLayoutCollectionViewCell.reuseIdentifier)
-        collectionView.register(CollectionViewSectionHeader.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: CollectionViewSectionHeader.reuseIdentifier)
-      
+        collectionView.register(SmallFeaturedCollectionViewCell.self, forCellWithReuseIdentifier: SmallFeaturedCollectionViewCell.reuseIdentifier)
+        
+        
     }
     
     private func collectionViewSectionHeaderSetup(){
@@ -62,9 +65,9 @@ class AppsViewController: UIViewController {
             //S3 - Use the above found Section(Our model data) Data to get the needed data
             
             sectionHeader.sectionTitle.text = sectionData.title
-            print(sectionData.title)
+//            print(sectionData.title)
             sectionHeader.sectionSubTitle.text = sectionData.subtitle
-    
+            
             
             return sectionHeader
         }
@@ -77,19 +80,27 @@ class AppsViewController: UIViewController {
             switch self.sections[indexpath.section].type{
             case "mediumTable":
                 let cell =  collectionView.dequeueReusableCell(withReuseIdentifier: GridLayoutCollectionViewCell.reuseIdentifier,
-                                                          for: indexpath) as? GridLayoutCollectionViewCell
+                                                               for: indexpath) as? GridLayoutCollectionViewCell
                 
                 cell?.configure(with: app)
                 return cell
             case "smallTable":
                 let cell =  collectionView.dequeueReusableCell(withReuseIdentifier: SmallGridLayoutCollectionViewCell.reuseIdentifier,
-                                                          for: indexpath) as? SmallGridLayoutCollectionViewCell
-
+                                                               for: indexpath) as? SmallGridLayoutCollectionViewCell
+                
+                cell?.configure(with: app)
+                return cell
+            case "smallFeatured":
+                let cell =  collectionView.dequeueReusableCell(withReuseIdentifier: SmallFeaturedCollectionViewCell.reuseIdentifier,
+                                                               for: indexpath) as? SmallFeaturedCollectionViewCell
+                
                 cell?.configure(with: app)
                 return cell
             default:
+//                let cell =  collectionView.dequeueReusableCell(withReuseIdentifier: SmallFeaturedCollectionViewCell.reuseIdentifier,
+//                                                               for: indexpath) as? SmallFeaturedCollectionViewCell
                 let cell =  collectionView.dequeueReusableCell(withReuseIdentifier: FeaturedCollectionViewCell.reuseIdentifier,
-                                                          for: indexpath) as? FeaturedCollectionViewCell
+                                                               for: indexpath) as? FeaturedCollectionViewCell
                 
                 cell?.configure(with: app)
                 return cell
@@ -111,7 +122,7 @@ class AppsViewController: UIViewController {
         
         dataSource?.apply(snapShot)
     }
-
+    
 }
 
 //MARK: - UICollectionViewCompositionalLayout Handler
@@ -125,6 +136,8 @@ extension AppsViewController{
                 return self.createGridLayoutCollectionSection()
             case "smallTable":
                 return self.createSmallGridLayoutSection()
+            case "smallFeatured":
+                return self.createSmallFeaturedLayoutCollectionSection()
             default:
                 return self.createFeaturedCollectionSection()
             }
@@ -145,9 +158,9 @@ extension AppsViewController{
         
         //Step 2: - Create an item by passing the created layout item size
         let layoutItem = NSCollectionLayoutItem(layoutSize: layoutItemSize)
-        layoutItem.contentInsets = NSDirectionalEdgeInsets(top: 0, leading: 5, bottom: 0, trailing: 5)
+        layoutItem.contentInsets = NSDirectionalEdgeInsets(top: 0, leading: 5, bottom: 10, trailing: 5)
         //Step 3: - Create a group size
-        let layoutGroupize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.9), heightDimension: .estimated(350))
+        let layoutGroupize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.95), heightDimension: .estimated(300))
         //Step 4: - Create a group by passing the created group size and  item
         let layoutGroup = NSCollectionLayoutGroup.horizontal(layoutSize: layoutGroupize, subitems: [layoutItem])
         //Step 5: - Create a section but passing the created group
@@ -159,14 +172,13 @@ extension AppsViewController{
     
     private func createGridLayoutCollectionSection () -> NSCollectionLayoutSection{
         
-        let layoutItemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(0.33))
-
+        let layoutItemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(1/3))
+        
         let layoutItem = NSCollectionLayoutItem(layoutSize: layoutItemSize)
-        layoutItem.contentInsets = NSDirectionalEdgeInsets(top: 0, leading: 5, bottom: 0, trailing: 5)
-
+        layoutItem.contentInsets = NSDirectionalEdgeInsets(top: 0, leading: 5, bottom: 5, trailing: 5)
+        
         let layoutGroupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.90), heightDimension: .fractionalWidth(0.55))
         let layoutGroup = NSCollectionLayoutGroup.vertical(layoutSize: layoutGroupSize, subitems: [layoutItem])
-
         let layoutSection = NSCollectionLayoutSection(group: layoutGroup)
         layoutSection.orthogonalScrollingBehavior = .groupPagingCentered
         
@@ -191,10 +203,29 @@ extension AppsViewController{
         return layoutSection
     }
     
+    private func createSmallFeaturedLayoutCollectionSection () -> NSCollectionLayoutSection{
+        
+        let layoutItemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(0.65))
+        
+        let layoutItem = NSCollectionLayoutItem(layoutSize: layoutItemSize)
+        layoutItem.contentInsets = NSDirectionalEdgeInsets(top: 0, leading: 5, bottom: 5, trailing: 5)
+        
+        let layoutGroupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.7), heightDimension: .estimated(280))
+        let layoutGroup = NSCollectionLayoutGroup.horizontal(layoutSize: layoutGroupSize, subitems: [layoutItem])
+        let layoutSection = NSCollectionLayoutSection(group: layoutGroup)
+        layoutSection.orthogonalScrollingBehavior = .groupPaging
+        layoutSection.contentInsets  = NSDirectionalEdgeInsets(top: 0, leading: 10, bottom: 0, trailing: 0)
+        //Adding a section header to  this section of your collection view
+        layoutSection.boundarySupplementaryItems = [createCollectionViewSectionHeaderLayout()]
+        
+        return layoutSection
+    }
+    
+    //MARK: Header compositional layout
     private func createCollectionViewSectionHeaderLayout() -> NSCollectionLayoutBoundarySupplementaryItem{
         let sectionSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.93), heightDimension: .estimated(80))
         let sectionSupplementaryView = NSCollectionLayoutBoundarySupplementaryItem(layoutSize: sectionSize, elementKind: UICollectionView.elementKindSectionHeader, alignment: .top)
-//        sectionSupplementaryView.contentInsets = NSDirectionalEdgeInsets(top: 0, leading: 20, bottom: 0, trailing: 0)
+        //        sectionSupplementaryView.contentInsets = NSDirectionalEdgeInsets(top: 0, leading: 20, bottom: 0, trailing: 0)
         return sectionSupplementaryView
     }
     
