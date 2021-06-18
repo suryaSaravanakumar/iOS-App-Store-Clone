@@ -305,7 +305,7 @@
     },
 	{
         "id": 4,
-		"type": "smallTable",
+		"type": "ListTable",
 		"title": "Top categories",
 		"subtitle": "",
 		"items": [

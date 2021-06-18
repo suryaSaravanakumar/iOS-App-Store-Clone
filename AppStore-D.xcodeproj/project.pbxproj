@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D80CEF08267AE714002F7092 /* SmallFeaturedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80CEF07267AE714002F7092 /* SmallFeaturedCollectionViewCell.swift */; };
+		D80CEF0E267C4A54002F7092 /* CompositionalLayoutHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80CEF0D267C4A54002F7092 /* CompositionalLayoutHelper.swift */; };
 		D82EA4BF2675E47E00B4EFE7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82EA4BE2675E47E00B4EFE7 /* AppDelegate.swift */; };
 		D82EA4C12675E47E00B4EFE7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82EA4C02675E47E00B4EFE7 /* SceneDelegate.swift */; };
 		D82EA4C32675E47E00B4EFE7 /* AppsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82EA4C22675E47E00B4EFE7 /* AppsViewController.swift */; };
@@ -44,6 +45,7 @@
 
 /* Begin PBXFileReference section */
 		D80CEF07267AE714002F7092 /* SmallFeaturedCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallFeaturedCollectionViewCell.swift; sourceTree = "<group>"; };
+		D80CEF0D267C4A54002F7092 /* CompositionalLayoutHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositionalLayoutHelper.swift; sourceTree = "<group>"; };
 		D82EA4BB2675E47E00B4EFE7 /* AppStore-D.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AppStore-D.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D82EA4BE2675E47E00B4EFE7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D82EA4C02675E47E00B4EFE7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -92,6 +94,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D80CEF0C267C4A15002F7092 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				D80CEF0D267C4A54002F7092 /* CompositionalLayoutHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		D82EA4B22675E47E00B4EFE7 = {
 			isa = PBXGroup;
 			children = (
@@ -116,6 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				D82EA4F126761CC300B4EFE7 /* App Delegate */,
+				D80CEF0C267C4A15002F7092 /* Helpers */,
 				D82EA4F226761CCF00B4EFE7 /* Controlls */,
 				D82EA4F326761CFC00B4EFE7 /* Storyboards */,
 				D82EA4C72675E47F00B4EFE7 /* Assets.xcassets */,
@@ -365,6 +376,7 @@
 				D82EA5282677A69E00B4EFE7 /* SmallGridLayoutCollectionViewCell.swift in Sources */,
 				D82EA4C12675E47E00B4EFE7 /* SceneDelegate.swift in Sources */,
 				D82EA52E2677C8CC00B4EFE7 /* CollectionViewSectionHeader.swift in Sources */,
+				D80CEF0E267C4A54002F7092 /* CompositionalLayoutHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
