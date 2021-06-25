@@ -1,6 +1,9 @@
 # iOS-App-Store-Clone
 I have created a clone of the iOS app store  by usinf Diffable DataSource and UICollectionViewCompostionalLayout. Check out and give your thoughts. Cheers.
 
+## App Store Clone Preview
+
+https://user-images.githubusercontent.com/74789441/123484891-b644de00-d626-11eb-9efb-eafdceaeba89.mp4
 
 
 ## How to run the project ?
@@ -13,6 +16,7 @@ I have created a clone of the iOS app store  by usinf Diffable DataSource and UI
 
 ## Spread the word!
 Liked the project? Just give it a star ⭐️ and spread the word!
+Follow me in  [Instagram](https://www.instagram.com/thathippiedev/) and [LinkedIn](https://www.linkedin.com/in/suryasaravanakumar/)
 
 ## Credits
 **©** **Surya Saravanakumar** | *2021*
