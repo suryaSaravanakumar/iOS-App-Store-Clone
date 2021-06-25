@@ -66,7 +66,7 @@ class TodayAppsViewController: UIViewController {
     }
     
     /**
-        Preparing CollectionView Header
+     Preparing CollectionView Header
      */
     private func collectionViewSectionHeaderSetup(){
         dataSource?.supplementaryViewProvider = { [weak self] collectionView, kind, indexPath in

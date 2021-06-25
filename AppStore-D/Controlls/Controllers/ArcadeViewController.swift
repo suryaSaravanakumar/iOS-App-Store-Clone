@@ -8,12 +8,12 @@
 import UIKit
 
 class ArcadeViewController: BaseAppsViewController {
-
+    
     // MARK: - Navigation
     override func viewDidLoad() {
         self.sections = Bundle.main.decode([Section].self, from: "games.json")
         super.viewDidLoad()
     }
     
-
+    
 }

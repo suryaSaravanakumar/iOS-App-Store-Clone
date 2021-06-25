@@ -31,7 +31,7 @@ class TodayAppsCollectionReusableView: UICollectionReusableView {
         sectionTitle.font = UIFontMetrics.default.scaledFont(for: UIFont.systemFont(ofSize: 26, weight: .bold))
         dateTitle.textColor = .secondaryLabel
         dateTitle.text = getCurrentDate().uppercased()
-       
+        
         profileButton.image = UIImage(systemName: "person.circle")
         profileButton.translatesAutoresizingMaskIntoConstraints = false
         let stackView = UIStackView(arrangedSubviews: [dateTitle, sectionTitle])

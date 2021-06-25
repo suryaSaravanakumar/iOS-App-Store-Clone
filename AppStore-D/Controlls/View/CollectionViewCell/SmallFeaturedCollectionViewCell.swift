@@ -32,18 +32,18 @@ class SmallFeaturedCollectionViewCell: UICollectionViewCell, SelfConfiguringCell
         
         appSubTitle.font = UIFontMetrics.default.scaledFont(for: UIFont.systemFont(ofSize: 13, weight: .regular))
         appTitle.textColor = .secondaryLabel
-
+        
         appPreviewImageView.layer.cornerRadius = 10
         appPreviewImageView.clipsToBounds = true
         appPreviewImageView.contentMode = .scaleAspectFill
-
+        
         let stackView =  UIStackView(arrangedSubviews: [appPreviewImageView,appTitle,appSubTitle])
         stackView.axis = .vertical
         stackView.spacing = 5
         stackView.setCustomSpacing(10, after: appPreviewImageView)
         stackView.translatesAutoresizingMaskIntoConstraints = false
         contentView.addSubview(stackView)
-
+        
         NSLayoutConstraint.activate([
             appPreviewImageView.heightAnchor.constraint(equalToConstant: 150),
             stackView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
@@ -51,7 +51,7 @@ class SmallFeaturedCollectionViewCell: UICollectionViewCell, SelfConfiguringCell
             stackView.topAnchor.constraint(equalTo: contentView.topAnchor),
             stackView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor)
         ])
-      
+        
     }
     
     func configure(with app: App) {

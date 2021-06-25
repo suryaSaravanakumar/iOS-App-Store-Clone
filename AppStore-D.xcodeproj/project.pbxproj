@@ -150,13 +150,10 @@
 			children = (
 				D82EA4F126761CC300B4EFE7 /* App Delegate */,
 				D80CEF0C267C4A15002F7092 /* Utils */,
+				D8B652872686762E00A23956 /* Data */,
 				D82EA4F226761CCF00B4EFE7 /* Controlls */,
 				D82EA4F326761CFC00B4EFE7 /* Storyboards */,
 				D82EA4C72675E47F00B4EFE7 /* Assets.xcassets */,
-				D8C2FAF026818F7600EA88E8 /* TodaysApp.json */,
-				D8558AE4267CFEAA00A0B298 /* games.json */,
-				D8B65282268656B500A23956 /* searchSuggestions.json */,
-				D82EA4F826761F1B00B4EFE7 /* apps.json */,
 				D82EA4CC2675E47F00B4EFE7 /* Info.plist */,
 			);
 			path = "AppStore-D";
@@ -266,6 +263,17 @@
 				D8B6527D268614F300A23956 /* TodayAppsCollectionReusableView.swift */,
 			);
 			path = CollectionViewSectionHeader;
+			sourceTree = "<group>";
+		};
+		D8B652872686762E00A23956 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				D8C2FAF026818F7600EA88E8 /* TodaysApp.json */,
+				D8558AE4267CFEAA00A0B298 /* games.json */,
+				D8B65282268656B500A23956 /* searchSuggestions.json */,
+				D82EA4F826761F1B00B4EFE7 /* apps.json */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

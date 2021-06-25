@@ -51,11 +51,11 @@ class GridLayoutCollectionViewCell: UICollectionViewCell,SelfConfiguringCell {
         
         let titleHolderStackView = UIStackView(arrangedSubviews: [appTitle,appSubtitle])
         titleHolderStackView.axis = .vertical
-
+        
         let downloadBtnHolderStackView = UIStackView(arrangedSubviews: [appDownloadButon])
         downloadBtnHolderStackView.axis = .vertical
-   
-    
+        
+        
         let stackView = UIStackView(arrangedSubviews: [appIconImageView,titleHolderStackView,appDownloadButon])
         stackView.translatesAutoresizingMaskIntoConstraints = false
         stackView.alignment = .center

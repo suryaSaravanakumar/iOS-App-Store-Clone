@@ -10,7 +10,6 @@ import UIKit
 class CollectionViewSectionHeader: UICollectionReusableView {
     //MARK: - Property Declaration
     static let reuseIdentifier = "CollectionViewSectionHeader"
-    
     let sectionTitle = UILabel()
     let sectionSubTitle = UILabel()
     
@@ -33,7 +32,7 @@ class CollectionViewSectionHeader: UICollectionReusableView {
         let separatorView = UIView(frame: .zero)
         separatorView.translatesAutoresizingMaskIntoConstraints = false
         separatorView.backgroundColor = .quaternaryLabel
-       
+        
         
         let stackView = UIStackView(arrangedSubviews: [separatorView,sectionTitle,sectionSubTitle])
         stackView.translatesAutoresizingMaskIntoConstraints = false
@@ -51,5 +50,5 @@ class CollectionViewSectionHeader: UICollectionReusableView {
         stackView.setCustomSpacing(10, after: separatorView)
     }
     
-        
+    
 }

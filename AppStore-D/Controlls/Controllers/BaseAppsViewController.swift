@@ -2,7 +2,7 @@
 //  GamesViewController.swift
 //  AppStore-D
 //
-//  Created by Surya on 18/06/21.
+//  Created by Surya on 23/06/21.
 //
 
 
@@ -51,7 +51,7 @@ class BaseAppsViewController: UIViewController {
     }
     
     /**
-        Preparing CollectionView Header
+     Preparing CollectionView Header
      */
     private func collectionViewSectionHeaderSetup(){
         dataSource?.supplementaryViewProvider = { [weak self] collectionView, kind, indexPath in

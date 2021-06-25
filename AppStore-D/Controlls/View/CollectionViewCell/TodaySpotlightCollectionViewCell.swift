@@ -66,13 +66,13 @@ class TodaySpotlightCollectionViewCell: UICollectionViewCell,SelfConfiguringCell
         titleStackView.axis = .vertical
         titleStackView.spacing = 5
         
-       
+        
         appHolderView.addSubview(spotLightImageView)
         contentView.addSubview(appHolderView)
         
         switch cellType {
         case .fullImage:
-        
+            
             
             appHolderView.addSubview(titleStackView)
             appHolderView.addSubview(appTagLine)
@@ -114,7 +114,7 @@ class TodaySpotlightCollectionViewCell: UICollectionViewCell,SelfConfiguringCell
                 bottomTagHolderView.trailingAnchor.constraint(equalTo: appHolderView.trailingAnchor),
                 titleStackView.topAnchor.constraint(equalTo: bottomTagHolderView.topAnchor, constant: 10),
                 titleStackView.leadingAnchor.constraint(equalTo: bottomTagHolderView.leadingAnchor, constant: 10),
-               
+                
                 appTagLine.leadingAnchor.constraint(equalTo: titleStackView.leadingAnchor),
                 appTagLine.topAnchor.constraint(equalTo: titleStackView.bottomAnchor, constant: 5),
                 
@@ -122,7 +122,7 @@ class TodaySpotlightCollectionViewCell: UICollectionViewCell,SelfConfiguringCell
                 
             ])
         }
-    
+        
         
     }
     

@@ -8,8 +8,8 @@
 import UIKit
 
 class SearchAppViewController: UIViewController {
-
-   
+    
+    
     //MARK: - Outlet Declaration
     var collectionView: UICollectionView!
     
@@ -53,7 +53,7 @@ class SearchAppViewController: UIViewController {
     }
     
     /**
-        Preparing CollectionView Header
+     Preparing CollectionView Header
      */
     private func collectionViewSectionHeaderSetup(){
         dataSource?.supplementaryViewProvider = { [weak self] collectionView, kind, indexPath in
@@ -65,8 +65,8 @@ class SearchAppViewController: UIViewController {
             sectionHeader.sectionTitle.text = sectionData.title
             return sectionHeader
         }
-    
-}
+        
+    }
     
     //MARK: Diffable datasource configurations
     private func configureDataSource(){
@@ -98,6 +98,6 @@ class SearchAppViewController: UIViewController {
         let compositionalLayout = UICollectionViewCompositionalLayout(section:  CompositionalLayoutHelper.createListLayoutCollectionSection())
         return compositionalLayout
     }
-
-
+    
+    
 }
