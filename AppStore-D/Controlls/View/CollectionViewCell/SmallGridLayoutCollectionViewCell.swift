@@ -41,7 +41,8 @@ class SmallGridLayoutCollectionViewCell: UICollectionViewCell,SelfConfiguringCel
         contentView.addSubview(stackView)
         
         NSLayoutConstraint.activate([
-            appIconImageView.widthAnchor.constraint(equalToConstant: 20),
+            appIconImageView.widthAnchor.constraint(equalToConstant: 40),
+            appIconImageView.heightAnchor.constraint(equalToConstant: 40),
             stackView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
             stackView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
             stackView.topAnchor.constraint(equalTo: contentView.topAnchor),

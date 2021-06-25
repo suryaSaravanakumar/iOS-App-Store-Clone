@@ -44,7 +44,6 @@
         <!--Navigation Controller-->
         <scene sceneID="Iif-FG-wUQ">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="CJ0-WJ-DqL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController id="uDQ-gj-p1e" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" systemItem="search" id="BOr-h5-iN4"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="aKz-RK-Jwq">
@@ -55,13 +54,14 @@
                         <segue destination="Uy7-g0-vP5" kind="relationship" relationship="rootViewController" id="9qA-V8-jpI"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CJ0-WJ-DqL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1326" y="1219"/>
         </scene>
         <!--Search-->
         <scene sceneID="ph9-Wl-RoE">
             <objects>
-                <viewController id="Uy7-g0-vP5" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SearchAppViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Uy7-g0-vP5" customClass="SearchAppViewController" customModule="AppStore_D" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0me-7p-GTC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -77,12 +77,12 @@
         <!--Today-->
         <scene sceneID="uLt-14-Hbw">
             <objects>
-                <viewController id="aqG-vb-wOH" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TodayAppsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="aqG-vb-wOH" customClass="TodayAppsViewController" customModule="AppStore_D" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BeM-lM-L2u">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="g2U-SA-HsJ"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="secondarySystemGroupedBackgroundColor"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Today" image="Today" selectedImage="Today" id="btR-Kf-Aej"/>
                 </viewController>
@@ -131,7 +131,7 @@
         <!--Games-->
         <scene sceneID="Eve-1t-8O8">
             <objects>
-                <viewController id="zpC-79-n0a" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GamesViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="zpC-79-n0a" customClass="GamesViewController" customModule="AppStore_D" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="x4s-4S-VSB">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -166,7 +166,7 @@
         <!--Arcade-->
         <scene sceneID="gv1-B7-6Lu">
             <objects>
-                <viewController id="ghK-vG-xui" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ArcadeViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ghK-vG-xui" customClass="ArcadeViewController" customModule="AppStore_D" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PY1-hE-uxf">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -185,6 +185,9 @@
         <image name="Games" width="29" height="29"/>
         <image name="Today" width="29" height="29"/>
         <image name="square.stack.3d.up.fill" catalog="system" width="128" height="124"/>
+        <systemColor name="secondarySystemGroupedBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

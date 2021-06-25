@@ -1,0 +1,112 @@
+[
+    {
+        "id": 1,
+        "type": "featured",
+        "title": "Today",
+        "subtitle": "",
+        "items": [
+            {
+                "id": 3,
+                "tagline": "LISTEN",
+                "name": "POD GO",
+                "subheading": "Pods for everyone",
+                "image": "TS3",
+                "iap": false,
+                "cellType": "FullImage"
+            },
+            
+            {
+                "id": 2,
+                "tagline": "PRODUCTIVITY",
+                "name": "Notes",
+                "subheading": "Note Everything",
+                "image": "TS2",
+                "iap": false,
+                "cellType": "HalfImage"
+            },
+            {
+                "id": 5,
+                "tagline": "ANNIVERSARY EVENT",
+                "name": "Call Of Duty",
+                "subheading": "Haunt or be haunted",
+                "image": "TS13",
+                "iap": true,
+                "cellType": "HalfImage"
+            },
+            {
+                "id": 3,
+                "tagline": "ANNIVERSARY EVENT",
+                "name": "GIF Brewery",
+                "subheading": "Make you own GIF",
+                "image": "TS1",
+                "iap": true,
+                "cellType": "FullImage"
+            },
+            
+            {
+                "id": 4,
+                "tagline": "GAME",
+                "name": "Need For Speed",
+                "subheading": "Win the anniversary contest",
+                "image": "TS4",
+                "iap": false,
+                "cellType": "FullImage"
+            },
+            
+            {
+                "id": 6,
+                "tagline": "PRODUCTIVITY",
+                "name": "Smartwhirl",
+                "subheading": "Note Everything",
+                "image": "TS6",
+                "iap": false,
+                "cellType": "FullImage"
+            },
+            {
+                "id": 7,
+                "tagline": "LISTEN",
+                "name": "Spellnow",
+                "subheading": "Pods for everyone",
+                "image": "TS7",
+                "iap": false,
+                "cellType": "HalfImage"
+            },
+            {
+                "id": 8,
+                "tagline": "GAME",
+                "name": "Strokey",
+                "subheading": "Win the anniversary contest",
+                "image": "TS8",
+                "iap": false,
+                "cellType": "FullImage"
+            },
+            {
+                "id": 2,
+                "tagline": "PRODUCTIVITY",
+                "name": "Notes",
+                "subheading": "Note Everything",
+                "image": "TS9",
+                "iap": false,
+                "cellType": "HalfImage"
+            },
+            {
+                "id": 3,
+                "tagline": "LISTEN",
+                "name": "POD GO",
+                "subheading": "Pods for everyone",
+                "image": "TS10",
+                "iap": false,
+                "cellType": "FullImage"
+            },
+            {
+                "id": 4,
+                "tagline": "GAME",
+                "name": "Need For Speed",
+                "subheading": "Win the anniversary contest",
+                "image": "TS11",
+                "iap": false,
+                "cellType": "FullImage"
+            }
+        ]
+    }
+]

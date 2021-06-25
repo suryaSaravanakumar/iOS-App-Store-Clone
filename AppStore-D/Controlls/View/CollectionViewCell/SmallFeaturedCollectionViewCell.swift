@@ -11,6 +11,7 @@ class SmallFeaturedCollectionViewCell: UICollectionViewCell, SelfConfiguringCell
     //MARK: - Property declaration
     static var reuseIdentifier: String = "SmallFeaturedCollectionViewCell"
     let appTitle = UILabel()
+    let appSubTitle = UILabel()
     let appPreviewImageView = UIImageView()
     
     //MARK: - Init
@@ -26,16 +27,20 @@ class SmallFeaturedCollectionViewCell: UICollectionViewCell, SelfConfiguringCell
     //MARK: - Custom Methods
     
     private func makeUI(){
-        appTitle.font = UIFontMetrics.default.scaledFont(for: UIFont.systemFont(ofSize: 14, weight: .regular))
+        appTitle.font = UIFontMetrics.default.scaledFont(for: UIFont.systemFont(ofSize: 15, weight: .regular))
         appTitle.textColor = .label
+        
+        appSubTitle.font = UIFontMetrics.default.scaledFont(for: UIFont.systemFont(ofSize: 13, weight: .regular))
+        appTitle.textColor = .secondaryLabel
 
         appPreviewImageView.layer.cornerRadius = 10
         appPreviewImageView.clipsToBounds = true
         appPreviewImageView.contentMode = .scaleAspectFill
 
-        let stackView =  UIStackView(arrangedSubviews: [appPreviewImageView,appTitle])
+        let stackView =  UIStackView(arrangedSubviews: [appPreviewImageView,appTitle,appSubTitle])
         stackView.axis = .vertical
-        stackView.spacing = 10
+        stackView.spacing = 5
+        stackView.setCustomSpacing(10, after: appPreviewImageView)
         stackView.translatesAutoresizingMaskIntoConstraints = false
         contentView.addSubview(stackView)
 
@@ -51,6 +56,7 @@ class SmallFeaturedCollectionViewCell: UICollectionViewCell, SelfConfiguringCell
     
     func configure(with app: App) {
         appTitle.text = app.name
+        appSubTitle.text = app.subheading
         appPreviewImageView.image = UIImage(named: app.image)
     }
     

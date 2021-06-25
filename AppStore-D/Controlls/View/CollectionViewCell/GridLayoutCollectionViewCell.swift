@@ -41,18 +41,12 @@ class GridLayoutCollectionViewCell: UICollectionViewCell,SelfConfiguringCell {
         
         appIconImageView.layer.cornerRadius = 15
         appIconImageView.clipsToBounds = true
+        appIconImageView.contentMode = .scaleAspectFill
         
         appInAppPurchaseLabel.font = UIFont.systemFont(ofSize: 9)
         appInAppPurchaseLabel.textColor = .secondaryLabel
         
         appDownloadButon.setImage(UIImage(systemName: "icloud.and.arrow.down"), for: .normal)
-//        appDownloadButon.setTitle("GET", for: .normal)
-//        appDownloadButon.setTitleColor(.systemBlue, for: .normal)
-//        appDownloadButon.titleLabel?.font = UIFont.systemFont(ofSize: 13)
-//        appDownloadButon.backgroundColor = .systemGray2
-//        appDownloadButon.layer.cornerRadius = 15
-//        appDownloadButon.clipsToBounds = true
-        
         appIconImageView.setContentHuggingPriority(.defaultHigh, for: .horizontal)
         
         let titleHolderStackView = UIStackView(arrangedSubviews: [appTitle,appSubtitle])
@@ -69,6 +63,8 @@ class GridLayoutCollectionViewCell: UICollectionViewCell,SelfConfiguringCell {
         contentView.addSubview(stackView)
         
         NSLayoutConstraint.activate([
+            appIconImageView.heightAnchor.constraint(equalToConstant: 50),
+            appIconImageView.widthAnchor.constraint(equalToConstant: 50),
             appSubtitle.widthAnchor.constraint(equalToConstant: contentView.frame.width / 1.5),
             stackView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
             stackView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),

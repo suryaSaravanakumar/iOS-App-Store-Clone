@@ -17,13 +17,24 @@
 		D82EA4CB2675E47F00B4EFE7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D82EA4C92675E47F00B4EFE7 /* LaunchScreen.storyboard */; };
 		D82EA4D62675E47F00B4EFE7 /* AppStore_DTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82EA4D52675E47F00B4EFE7 /* AppStore_DTests.swift */; };
 		D82EA4E12675E47F00B4EFE7 /* AppStore_DUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82EA4E02675E47F00B4EFE7 /* AppStore_DUITests.swift */; };
-		D82EA4F926761F1B00B4EFE7 /* appstore.json in Resources */ = {isa = PBXBuildFile; fileRef = D82EA4F826761F1B00B4EFE7 /* appstore.json */; };
+		D82EA4F926761F1B00B4EFE7 /* apps.json in Resources */ = {isa = PBXBuildFile; fileRef = D82EA4F826761F1B00B4EFE7 /* apps.json */; };
 		D82EA4FE26761F5400B4EFE7 /* AppStoreModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82EA4FD26761F5400B4EFE7 /* AppStoreModel.swift */; };
 		D82EA516267627F900B4EFE7 /* AppStoreCellConfigurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82EA515267627F900B4EFE7 /* AppStoreCellConfigurable.swift */; };
 		D82EA51E267628DD00B4EFE7 /* FeaturedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82EA51D267628DD00B4EFE7 /* FeaturedCollectionViewCell.swift */; };
 		D82EA52326766E7F00B4EFE7 /* GridLayoutCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82EA52226766E7F00B4EFE7 /* GridLayoutCollectionViewCell.swift */; };
 		D82EA5282677A69E00B4EFE7 /* SmallGridLayoutCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82EA5272677A69E00B4EFE7 /* SmallGridLayoutCollectionViewCell.swift */; };
 		D82EA52E2677C8CC00B4EFE7 /* CollectionViewSectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82EA52D2677C8CC00B4EFE7 /* CollectionViewSectionHeader.swift */; };
+		D8558AD2267CCF6700A0B298 /* BaseAppsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8558AD1267CCF6700A0B298 /* BaseAppsViewController.swift */; };
+		D8558AD8267CCF9600A0B298 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8558AD7267CCF9600A0B298 /* Constants.swift */; };
+		D8558AE0267CF99B00A0B298 /* GamesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8558ADF267CF99B00A0B298 /* GamesViewController.swift */; };
+		D8558AE5267CFEAA00A0B298 /* games.json in Resources */ = {isa = PBXBuildFile; fileRef = D8558AE4267CFEAA00A0B298 /* games.json */; };
+		D8B6527E268614F300A23956 /* TodayAppsCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B6527D268614F300A23956 /* TodayAppsCollectionReusableView.swift */; };
+		D8B65283268656B500A23956 /* searchSuggestions.json in Resources */ = {isa = PBXBuildFile; fileRef = D8B65282268656B500A23956 /* searchSuggestions.json */; };
+		D8C2FADC268184AE00EA88E8 /* ArcadeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C2FADB268184AE00EA88E8 /* ArcadeViewController.swift */; };
+		D8C2FAE2268185BC00EA88E8 /* TodayAppsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C2FAE1268185BC00EA88E8 /* TodayAppsViewController.swift */; };
+		D8C2FAE72681861100EA88E8 /* SearchAppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C2FAE62681861100EA88E8 /* SearchAppViewController.swift */; };
+		D8C2FAEC2681894700EA88E8 /* TodaySpotlightCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C2FAEB2681894700EA88E8 /* TodaySpotlightCollectionViewCell.swift */; };
+		D8C2FAF126818F7600EA88E8 /* TodaysApp.json in Resources */ = {isa = PBXBuildFile; fileRef = D8C2FAF026818F7600EA88E8 /* TodaysApp.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,13 +71,24 @@
 		D82EA4DC2675E47F00B4EFE7 /* AppStore-DUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AppStore-DUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D82EA4E02675E47F00B4EFE7 /* AppStore_DUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStore_DUITests.swift; sourceTree = "<group>"; };
 		D82EA4E22675E47F00B4EFE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D82EA4F826761F1B00B4EFE7 /* appstore.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = appstore.json; sourceTree = "<group>"; };
+		D82EA4F826761F1B00B4EFE7 /* apps.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = apps.json; sourceTree = "<group>"; };
 		D82EA4FD26761F5400B4EFE7 /* AppStoreModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStoreModel.swift; sourceTree = "<group>"; };
 		D82EA515267627F900B4EFE7 /* AppStoreCellConfigurable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStoreCellConfigurable.swift; sourceTree = "<group>"; };
 		D82EA51D267628DD00B4EFE7 /* FeaturedCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedCollectionViewCell.swift; sourceTree = "<group>"; };
 		D82EA52226766E7F00B4EFE7 /* GridLayoutCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridLayoutCollectionViewCell.swift; sourceTree = "<group>"; };
 		D82EA5272677A69E00B4EFE7 /* SmallGridLayoutCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallGridLayoutCollectionViewCell.swift; sourceTree = "<group>"; };
 		D82EA52D2677C8CC00B4EFE7 /* CollectionViewSectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewSectionHeader.swift; sourceTree = "<group>"; };
+		D8558AD1267CCF6700A0B298 /* BaseAppsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseAppsViewController.swift; sourceTree = "<group>"; };
+		D8558AD7267CCF9600A0B298 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		D8558ADF267CF99B00A0B298 /* GamesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesViewController.swift; sourceTree = "<group>"; };
+		D8558AE4267CFEAA00A0B298 /* games.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = games.json; sourceTree = "<group>"; };
+		D8B6527D268614F300A23956 /* TodayAppsCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayAppsCollectionReusableView.swift; sourceTree = "<group>"; };
+		D8B65282268656B500A23956 /* searchSuggestions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = searchSuggestions.json; sourceTree = "<group>"; };
+		D8C2FADB268184AE00EA88E8 /* ArcadeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArcadeViewController.swift; sourceTree = "<group>"; };
+		D8C2FAE1268185BC00EA88E8 /* TodayAppsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayAppsViewController.swift; sourceTree = "<group>"; };
+		D8C2FAE62681861100EA88E8 /* SearchAppViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchAppViewController.swift; sourceTree = "<group>"; };
+		D8C2FAEB2681894700EA88E8 /* TodaySpotlightCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodaySpotlightCollectionViewCell.swift; sourceTree = "<group>"; };
+		D8C2FAF026818F7600EA88E8 /* TodaysApp.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TodaysApp.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,12 +116,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		D80CEF0C267C4A15002F7092 /* Helpers */ = {
+		D80CEF0C267C4A15002F7092 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
 				D80CEF0D267C4A54002F7092 /* CompositionalLayoutHelper.swift */,
+				D8558AD7267CCF9600A0B298 /* Constants.swift */,
 			);
-			path = Helpers;
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		D82EA4B22675E47E00B4EFE7 = {
@@ -126,11 +149,14 @@
 			isa = PBXGroup;
 			children = (
 				D82EA4F126761CC300B4EFE7 /* App Delegate */,
-				D80CEF0C267C4A15002F7092 /* Helpers */,
+				D80CEF0C267C4A15002F7092 /* Utils */,
 				D82EA4F226761CCF00B4EFE7 /* Controlls */,
 				D82EA4F326761CFC00B4EFE7 /* Storyboards */,
 				D82EA4C72675E47F00B4EFE7 /* Assets.xcassets */,
-				D82EA4F826761F1B00B4EFE7 /* appstore.json */,
+				D8C2FAF026818F7600EA88E8 /* TodaysApp.json */,
+				D8558AE4267CFEAA00A0B298 /* games.json */,
+				D8B65282268656B500A23956 /* searchSuggestions.json */,
+				D82EA4F826761F1B00B4EFE7 /* apps.json */,
 				D82EA4CC2675E47F00B4EFE7 /* Info.plist */,
 			);
 			path = "AppStore-D";
@@ -212,6 +238,11 @@
 			isa = PBXGroup;
 			children = (
 				D82EA4C22675E47E00B4EFE7 /* AppsViewController.swift */,
+				D8558AD1267CCF6700A0B298 /* BaseAppsViewController.swift */,
+				D8558ADF267CF99B00A0B298 /* GamesViewController.swift */,
+				D8C2FADB268184AE00EA88E8 /* ArcadeViewController.swift */,
+				D8C2FAE1268185BC00EA88E8 /* TodayAppsViewController.swift */,
+				D8C2FAE62681861100EA88E8 /* SearchAppViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -223,6 +254,7 @@
 				D82EA52226766E7F00B4EFE7 /* GridLayoutCollectionViewCell.swift */,
 				D82EA5272677A69E00B4EFE7 /* SmallGridLayoutCollectionViewCell.swift */,
 				D80CEF07267AE714002F7092 /* SmallFeaturedCollectionViewCell.swift */,
+				D8C2FAEB2681894700EA88E8 /* TodaySpotlightCollectionViewCell.swift */,
 			);
 			path = CollectionViewCell;
 			sourceTree = "<group>";
@@ -231,6 +263,7 @@
 			isa = PBXGroup;
 			children = (
 				D82EA52D2677C8CC00B4EFE7 /* CollectionViewSectionHeader.swift */,
+				D8B6527D268614F300A23956 /* TodayAppsCollectionReusableView.swift */,
 			);
 			path = CollectionViewSectionHeader;
 			sourceTree = "<group>";
@@ -340,8 +373,11 @@
 			files = (
 				D82EA4CB2675E47F00B4EFE7 /* LaunchScreen.storyboard in Resources */,
 				D82EA4C82675E47F00B4EFE7 /* Assets.xcassets in Resources */,
+				D8558AE5267CFEAA00A0B298 /* games.json in Resources */,
 				D82EA4C62675E47E00B4EFE7 /* Main.storyboard in Resources */,
-				D82EA4F926761F1B00B4EFE7 /* appstore.json in Resources */,
+				D8B65283268656B500A23956 /* searchSuggestions.json in Resources */,
+				D82EA4F926761F1B00B4EFE7 /* apps.json in Resources */,
+				D8C2FAF126818F7600EA88E8 /* TodaysApp.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,17 +402,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8558AE0267CF99B00A0B298 /* GamesViewController.swift in Sources */,
 				D82EA4C32675E47E00B4EFE7 /* AppsViewController.swift in Sources */,
+				D8C2FADC268184AE00EA88E8 /* ArcadeViewController.swift in Sources */,
 				D82EA52326766E7F00B4EFE7 /* GridLayoutCollectionViewCell.swift in Sources */,
 				D82EA4FE26761F5400B4EFE7 /* AppStoreModel.swift in Sources */,
 				D82EA51E267628DD00B4EFE7 /* FeaturedCollectionViewCell.swift in Sources */,
+				D8558AD2267CCF6700A0B298 /* BaseAppsViewController.swift in Sources */,
 				D80CEF08267AE714002F7092 /* SmallFeaturedCollectionViewCell.swift in Sources */,
 				D82EA4BF2675E47E00B4EFE7 /* AppDelegate.swift in Sources */,
+				D8558AD8267CCF9600A0B298 /* Constants.swift in Sources */,
 				D82EA516267627F900B4EFE7 /* AppStoreCellConfigurable.swift in Sources */,
+				D8B6527E268614F300A23956 /* TodayAppsCollectionReusableView.swift in Sources */,
+				D8C2FAE72681861100EA88E8 /* SearchAppViewController.swift in Sources */,
 				D82EA5282677A69E00B4EFE7 /* SmallGridLayoutCollectionViewCell.swift in Sources */,
+				D8C2FAE2268185BC00EA88E8 /* TodayAppsViewController.swift in Sources */,
 				D82EA4C12675E47E00B4EFE7 /* SceneDelegate.swift in Sources */,
 				D82EA52E2677C8CC00B4EFE7 /* CollectionViewSectionHeader.swift in Sources */,
 				D80CEF0E267C4A54002F7092 /* CompositionalLayoutHelper.swift in Sources */,
+				D8C2FAEC2681894700EA88E8 /* TodaySpotlightCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

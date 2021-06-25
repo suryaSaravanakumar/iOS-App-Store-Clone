@@ -39,7 +39,6 @@ class CollectionViewSectionHeader: UICollectionReusableView {
         stackView.translatesAutoresizingMaskIntoConstraints = false
         stackView.axis = .vertical
         
-        
         addSubview(stackView)
         
         NSLayoutConstraint.activate([

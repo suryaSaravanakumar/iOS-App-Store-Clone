@@ -28,7 +28,7 @@ extension Bundle {
     }
 }
 
-struct Section: Decodable, Hashable {
+struct Section: Codable, Hashable {
     let id: Int
     let type: String
     let title: String
@@ -36,11 +36,12 @@ struct Section: Decodable, Hashable {
     let items: [App]
 }
 
-struct App: Decodable, Hashable {
+struct App: Codable, Hashable {
     let id: Int
     let tagline: String
     let name: String
     let subheading: String
     let image: String
     let iap: Bool
+    let cellType: String?
 }

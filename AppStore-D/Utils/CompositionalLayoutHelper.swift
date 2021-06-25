@@ -8,7 +8,15 @@
 import UIKit
 
 struct CompositionalLayoutHelper {
+    //MARK: Header compositional layout
+    static func createCollectionViewSectionHeaderLayout() -> NSCollectionLayoutBoundarySupplementaryItem{
+        let sectionSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.93), heightDimension: .estimated(80))
+        let sectionSupplementaryView = NSCollectionLayoutBoundarySupplementaryItem(layoutSize: sectionSize, elementKind: UICollectionView.elementKindSectionHeader, alignment: .top)
+        //        sectionSupplementaryView.contentInsets = NSDirectionalEdgeInsets(top: 0, leading: 20, bottom: 0, trailing: 0)
+        return sectionSupplementaryView
+    }
     
+    //MARK: - Collection Layot section(s)
     /// This Function helps to build the section looks and behaviour while in UICompositional layout
     static func createFeaturedCollectionSection() -> NSCollectionLayoutSection{
         ///Collection Compositional layour consist of the following items
@@ -44,6 +52,7 @@ struct CompositionalLayoutHelper {
         
         let layoutGroupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.90), heightDimension: .fractionalWidth(0.55))
         let layoutGroup = NSCollectionLayoutGroup.vertical(layoutSize: layoutGroupSize, subitems: [layoutItem])
+        
         let layoutSection = NSCollectionLayoutSection(group: layoutGroup)
         layoutSection.orthogonalScrollingBehavior = .groupPagingCentered
         
@@ -75,22 +84,33 @@ struct CompositionalLayoutHelper {
         let layoutItem = NSCollectionLayoutItem(layoutSize: layoutItemSize)
         layoutItem.contentInsets = NSDirectionalEdgeInsets(top: 0, leading: 5, bottom: 5, trailing: 5)
         
-        let layoutGroupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.7), heightDimension: .estimated(280))
+        let layoutGroupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.7), heightDimension: .estimated(310))
+        
         let layoutGroup = NSCollectionLayoutGroup.horizontal(layoutSize: layoutGroupSize, subitems: [layoutItem])
         let layoutSection = NSCollectionLayoutSection(group: layoutGroup)
         layoutSection.orthogonalScrollingBehavior = .groupPaging
-        layoutSection.contentInsets  = NSDirectionalEdgeInsets(top: 0, leading: 10, bottom: 0, trailing: 0)
+        layoutSection.contentInsets  = NSDirectionalEdgeInsets(top: 0, leading: 20, bottom: 0, trailing: 0)
         //Adding a section header to  this section of your collection view
         layoutSection.boundarySupplementaryItems = [createCollectionViewSectionHeaderLayout()]
         
         return layoutSection
     }
     
-    //MARK: Header compositional layout
-    static func createCollectionViewSectionHeaderLayout() -> NSCollectionLayoutBoundarySupplementaryItem{
-        let sectionSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.93), heightDimension: .estimated(80))
-        let sectionSupplementaryView = NSCollectionLayoutBoundarySupplementaryItem(layoutSize: sectionSize, elementKind: UICollectionView.elementKindSectionHeader, alignment: .top)
-        //        sectionSupplementaryView.contentInsets = NSDirectionalEdgeInsets(top: 0, leading: 20, bottom: 0, trailing: 0)
-        return sectionSupplementaryView
+    static func createListLayoutCollectionSection () -> NSCollectionLayoutSection{
+        
+        let layoutItemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(1))
+        
+        let layoutItem = NSCollectionLayoutItem(layoutSize: layoutItemSize)
+        layoutItem.contentInsets = NSDirectionalEdgeInsets(top: 0, leading: 10, bottom: 5, trailing: 5)
+        
+        let layoutGroupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .estimated(65))
+        let layoutGroup = NSCollectionLayoutGroup.horizontal(layoutSize: layoutGroupSize, subitems: [layoutItem])
+        
+        let layoutSection = NSCollectionLayoutSection(group: layoutGroup)
+        
+        //Adding a section header to  this section of your collection view
+        layoutSection.boundarySupplementaryItems = [createCollectionViewSectionHeaderLayout()]
+        
+        return layoutSection
     }
 }

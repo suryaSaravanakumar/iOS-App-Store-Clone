@@ -7,23 +7,10 @@
 
 import UIKit
 
-class GamesViewController: UIViewController {
-
+class GamesViewController: BaseAppsViewController {
+    // MARK: - View LifeCyle
     override func viewDidLoad() {
+        self.sections = Bundle.main.decode([Section].self, from: "games.json")
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
