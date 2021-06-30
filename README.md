@@ -5,7 +5,6 @@ I have created a clone of the iOS app store  by usinf Diffable DataSource and UI
 
 https://user-images.githubusercontent.com/74789441/123484891-b644de00-d626-11eb-9efb-eafdceaeba89.mp4
 
-
 ## How to run the project ?
 * Fork the project.
 * Run the project using Xcode.
